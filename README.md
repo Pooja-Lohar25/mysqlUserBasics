@@ -1,4 +1,4 @@
-# mysqlUserBasics
+# Mysql User Management Basics
 ## Working with Mysql shell
 - \sql : to activate sql
 - \connect root@localhost : to connect to the server with user root and host as localhost
@@ -29,4 +29,13 @@ view currently running users <br>
 select id, users from information_schema.processlist;
 
 to disconnect a existing user connection from root account <br>
-kill \<id\>; //id given in the previos table i.e processlist
+kill \<id\>; //id given in the previos table i.e processlist <br>
+
+### Different types of
+
+- 'username'@'localhost'
+  - 'pooja'@'localhost' : pooja can only access it through localhost
+- 'username'@'192.25.1.2'
+  - 'pooja'@'192.25.1.2' : pooja can only access through server 192.25.1.2
+- 'username'
+  - 'pooja' : username without specifying host will enable it to access from anywhere
