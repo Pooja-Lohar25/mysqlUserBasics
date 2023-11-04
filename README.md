@@ -54,7 +54,7 @@ to disconnect a existing user connection from root account <br>
 ````
 kill \<id\>; //id given in the previos table i.e processlist 
 ````
-### Different types of
+### Different types of users
 
 ```
 'username'@'localhost'
